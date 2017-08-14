@@ -57,36 +57,26 @@ public class SortingMain {
         	break;
         case 5:
         	System.out.println("Merge Sort");
-        	for (int i = array.length-1; i >= 0; i--){
-                queue.add(array[i]);
-            }
+        	addArrayToQueue(array, queue);
         	array = MergeSort.sort(array);
         	printArray(array);
         	break;
         case 6:
         	System.out.println("Merge Sort Bottom Up");
-        	for (int i = array.length-1; i >= 0; i--){
-                queue.add(array[i]);
-            }
+        	addArrayToQueue(array, queue);
         	MergeSortBottomUp.sort(array);
         	printArray(array);
-        	break;
-        	
+        	break;        	
         case 7:
         	System.out.println("Merge Sort Natural");
-        	for (int i = array.length-1; i >= 0; i--){
-                queue.add(array[i]);
-            }
-            
+        	addArrayToQueue(array, queue);
             queue = MergeSortNatural.sort(queue);
-        	printQueue(queue);
-                
+        	printQueue(queue);                
         	break;
         case 8:
         	SelectionSort.sort(array);
         	printArray(array);
-        	break;
-        	
+        	break;        	
         case 9:
         	InsertionSort.sort(array);
         	printArray(array);
@@ -94,8 +84,7 @@ public class SortingMain {
         case 10:
         	BucketSort.sort(array);
         	printArray(array);
-        	break;
-        	
+        	break;        	
         case 11:
         	CocktailSort.sort(array);
         	printArray(array);
@@ -122,11 +111,14 @@ public class SortingMain {
         	break;
         case 17:
         	OddEvenSort.sort(array);
-        	printArray(array);       	
-			
+        	printArray(array);     	
+		}	 		
+	}
+
+	private static void addArrayToQueue(Integer[] array, Queue<Integer> queue) {
+		for (int i = array.length-1; i >= 0; i--){
+		    queue.add(array[i]);
 		}
-		
-		 		
 	}
 
 	private static void printQueue(Queue<Integer> queue) {
