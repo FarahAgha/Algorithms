@@ -1,4 +1,4 @@
-package grokking;
+package grokking.sorting;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -28,6 +28,7 @@ public class SortingMain {
 		System.out.println("14. Gnome Sort");
 		System.out.println("15. Heap Sort");
 		System.out.println("16. Radix Sort");
+		System.out.println("17. Odd Even Sort");
 		
 		@SuppressWarnings("resource")
 		Scanner keyboard = new Scanner(System.in);
@@ -119,6 +120,9 @@ public class SortingMain {
         	RadixSort.sort(array);
         	printArray(array);
         	break;
+        case 17:
+        	OddEvenSort.sort(array);
+        	printArray(array);       	
 			
 		}
 		

@@ -1,4 +1,4 @@
-package grokking;
+package grokking.sorting;
 
 public class GnomeSort {
 	public static <T extends Comparable<T>> void sort(T[] array) {

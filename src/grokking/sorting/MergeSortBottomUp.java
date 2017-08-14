@@ -1,4 +1,4 @@
-package grokking;
+package grokking.sorting;
 
 public class MergeSortBottomUp {
 

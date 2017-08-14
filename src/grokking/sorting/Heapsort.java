@@ -1,4 +1,4 @@
-package grokking;
+package grokking.sorting;
 
 public class Heapsort {
 	public static <T extends Comparable<T>> void sort(T[] array) {

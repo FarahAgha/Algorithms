@@ -1,4 +1,4 @@
-package grokking;
+package grokking.sorting;
 
 import java.util.LinkedList;
 import java.util.Queue;

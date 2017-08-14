@@ -1,4 +1,4 @@
-package grokking;
+package grokking.sorting;
 
 public class BubbleSort {
     public static void sort(Integer[] array) {
