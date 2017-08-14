@@ -13,7 +13,10 @@ public class SortingMain {
 		System.out.println("2. Bubble Sort Optimised");
 		System.out.println("3. Quicksort");
 		System.out.println("4. Selection Sort");
-		
+		System.out.println("5. Merge Sort");
+		System.out.println("6. Merge Sort Bottom Up ");
+		System.out.println("7. Merge Sort Natural");
+		System.out.println("8. Selection Sort");
 		
 		@SuppressWarnings("resource")
 		Scanner keyboard = new Scanner(System.in);
@@ -33,14 +36,23 @@ public class SortingMain {
         case 4:
         	SelectionSort.sort(array);
         	break;
+        case 5:
+        	MergeSort.sort(array);
+        	break;
+        case 6:
+        	MergeSortBottomUp.sort(array);
+        	break;
+        case 7:
+        	MergeSortNatural.sort(array);
+        	break;
+        case 8:
+        	MergeSort.sort(array);
 			
 		}
-	
 		
 		 for (int i = 0; i < array.length ; i++) {
 			 System.out.println(array[i]);
-		 }
-		
+		 }		
 	}
 
 }
