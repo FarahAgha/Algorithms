@@ -23,11 +23,11 @@ public class SortingMain {
 		System.out.println("9. Insertion Sort");
 		System.out.println("10. BucketSort Sort");
 		System.out.println("11. Cocktail Sort");
-
 		System.out.println("12. Comb Sort");
 		System.out.println("13. Counting Sort");
-		System.out.println("14. Cocktail Sort");
-		System.out.println("15. Cocktail Sort");
+		System.out.println("14. Gnome Sort");
+		System.out.println("15. Heap Sort");
+		System.out.println("16. Radix Sort");
 		
 		@SuppressWarnings("resource")
 		Scanner keyboard = new Scanner(System.in);
@@ -108,7 +108,15 @@ public class SortingMain {
         	printArray(array);
         	break;
         case 14:
-        	CombSort.sort(array);
+        	GnomeSort.sort(array);
+        	printArray(array);
+        	break;
+        case 15:
+        	Heapsort.sort(array);
+        	printArray(array);
+        	break;
+        case 16:
+        	RadixSort.sort(array);
         	printArray(array);
         	break;
 			
