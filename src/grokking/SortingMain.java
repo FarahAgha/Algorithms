@@ -20,6 +20,14 @@ public class SortingMain {
 		System.out.println("6. Merge Sort Bottom Up ");
 		System.out.println("7. Merge Sort Natural");
 		System.out.println("8. Selection Sort");
+		System.out.println("9. Insertion Sort");
+		System.out.println("10. BucketSort Sort");
+		System.out.println("11. Cocktail Sort");
+
+		System.out.println("12. Comb Sort");
+		System.out.println("13. Counting Sort");
+		System.out.println("14. Cocktail Sort");
+		System.out.println("15. Cocktail Sort");
 		
 		@SuppressWarnings("resource")
 		Scanner keyboard = new Scanner(System.in);
@@ -74,7 +82,35 @@ public class SortingMain {
                 
         	break;
         case 8:
-        	MergeSort.sort(array);
+        	SelectionSort.sort(array);
+        	printArray(array);
+        	break;
+        	
+        case 9:
+        	InsertionSort.sort(array);
+        	printArray(array);
+        	break;
+        case 10:
+        	BucketSort.sort(array);
+        	printArray(array);
+        	break;
+        	
+        case 11:
+        	CocktailSort.sort(array);
+        	printArray(array);
+        	break;
+        case 12:
+        	CombSort.sort(array);
+        	printArray(array);
+        	break;
+        case 13:
+        	CountingSort.sort(array);
+        	printArray(array);
+        	break;
+        case 14:
+        	CombSort.sort(array);
+        	printArray(array);
+        	break;
 			
 		}
 		
