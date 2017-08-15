@@ -19,7 +19,6 @@ public class SortingMain {
 		System.out.println("5. Merge Sort");
 		System.out.println("6. Merge Sort Bottom Up ");
 		System.out.println("7. Merge Sort Natural");
-		System.out.println("8. Selection Sort");
 		System.out.println("9. Insertion Sort");
 		System.out.println("10. BucketSort Sort");
 		System.out.println("11. Cocktail Sort");
@@ -38,98 +37,95 @@ public class SortingMain {
         case 1:
         	BubbleSort.sort(array);
         	System.out.println("BubbleSort");
-        	printArray(array);
+        	HelperFunctions.printArray(array);
         	break;
         case 2:
         	BubbleSortOptimised.sort(array);
         	System.out.println("Bubble Sort Optimised");
-        	printArray(array);
+        	HelperFunctions.printArray(array);
         	break;
         case 3:
         	Quicksort.sort(array);
         	System.out.println("Quick Sort");
-        	printArray(array);
+        	HelperFunctions.printArray(array);
         	break;
         case 4:
         	SelectionSort.sort(array);
         	System.out.println("Selection Sort");
-        	printArray(array);
+        	HelperFunctions.printArray(array);
         	break;
         case 5:
         	System.out.println("Merge Sort");
-        	addArrayToQueue(array, queue);
+        	//HelperFunctions.addArrayToQueue(array, queue);
         	array = MergeSort.sort(array);
-        	printArray(array);
+        	HelperFunctions.printArray(array);
         	break;
         case 6:
         	System.out.println("Merge Sort Bottom Up");
-        	addArrayToQueue(array, queue);
+        	//HelperFunctions.addArrayToQueue(array, queue);
         	MergeSortBottomUp.sort(array);
-        	printArray(array);
+        	HelperFunctions.printArray(array);
         	break;        	
         case 7:
         	System.out.println("Merge Sort Natural");
-        	addArrayToQueue(array, queue);
+        	queue = HelperFunctions.addArrayToQueue(array); 
             queue = MergeSortNatural.sort(queue);
-        	printQueue(queue);                
+            HelperFunctions.printQueue(queue);                
         	break;
         case 8:
+        	System.out.println("Selection Sort");
         	SelectionSort.sort(array);
-        	printArray(array);
+        	HelperFunctions.printArray(array);
         	break;        	
         case 9:
+        	System.out.println("Insertion Sort");
         	InsertionSort.sort(array);
-        	printArray(array);
+        	HelperFunctions.printArray(array);
         	break;
         case 10:
+        	System.out.println("Bucket Sort");
         	BucketSort.sort(array);
-        	printArray(array);
+        	HelperFunctions.printArray(array);
         	break;        	
         case 11:
+        	System.out.println("Cocktail Sort");
         	CocktailSort.sort(array);
-        	printArray(array);
+        	HelperFunctions.printArray(array);
         	break;
         case 12:
+        	System.out.println("Comb Sort");
         	CombSort.sort(array);
-        	printArray(array);
+        	HelperFunctions.printArray(array);
         	break;
         case 13:
+        	System.out.println("counting Sort");
         	CountingSort.sort(array);
-        	printArray(array);
+        	HelperFunctions.printArray(array);
         	break;
         case 14:
+        	System.out.println("Gnome Sort");
         	GnomeSort.sort(array);
-        	printArray(array);
+        	HelperFunctions.printArray(array);
         	break;
         case 15:
+        	System.out.println("Heap Sort");
         	Heapsort.sort(array);
-        	printArray(array);
+        	HelperFunctions.printArray(array);
         	break;
         case 16:
+        	System.out.println("Radix Sort");
         	RadixSort.sort(array);
-        	printArray(array);
+        	HelperFunctions.printArray(array);
         	break;
         case 17:
+        	System.out.println("OddEven Sort");
         	OddEvenSort.sort(array);
-        	printArray(array);     	
+        	HelperFunctions.printArray(array);     	
 		}	 		
 	}
 
-	private static void addArrayToQueue(Integer[] array, Queue<Integer> queue) {
-		for (int i = array.length-1; i >= 0; i--){
-		    queue.add(array[i]);
-		}
-	}
 
-	private static void printQueue(Queue<Integer> queue) {
-		while(!queue.isEmpty())
-			System.out.println( queue.remove());
-	}
 
-	private static void printArray(Integer[] array) {
-		for (int i = 0; i < array.length ; i++) {
-			 System.out.println(array[i]);
-		 }
-	}
+	
 
 }
