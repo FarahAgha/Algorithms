@@ -16,7 +16,7 @@ public class SortingTests {
 	// static Queue<Integer> queueResult = addArrayToQueue(arrayResult);
 
 	@Test(description = "Veryfy BubbleSort" , groups = "Positive")
-	public static void BubbleSortTest() {
+	public static void bubbleSortTest() {
 		Integer[] arrayToSort = { 13, 4, 2, 6, 5, 7, 18, 1, 9, 24 };
 		Integer[] arrayResult = { 1, 2, 4, 5, 6, 7, 9, 13, 18, 24 };
 		BubbleSort.sort(arrayToSort);
@@ -24,7 +24,7 @@ public class SortingTests {
 	}
 
 	@Test(description = "Verify Optimised Bubble Sort", groups = "Positive")
-	public static void BubbleSortOptimisedTest() {
+	public static void bubbleSortOptimisedTest() {
 		Integer[] arrayToSort = { 13, 4, 2, 6, 5, 7, 18, 1, 9, 24 };
 		Integer[] arrayResult = { 1, 2, 4, 5, 6, 7, 9, 13, 18, 24 };
 		BubbleSortOptimised.sort(arrayToSort);
@@ -32,7 +32,7 @@ public class SortingTests {
 	}
 
 	@Test(description = "Verify Bucket Sort", groups = "Positive")
-	public static void BucketSortTest() {
+	public static void bucketSortTest() {
 		Integer[] arrayToSort = { 13, 4, 2, 6, 5, 7, 18, 1, 9, 24 };
 		Integer[] arrayResult = { 1, 2, 4, 5, 6, 7, 9, 13, 18, 24 };
 		BucketSort.sort(arrayToSort);
@@ -40,7 +40,7 @@ public class SortingTests {
 	}
 
 	@Test(description = "Verify comb Sort", groups = "Positive")
-	public static void CombSortTest() {
+	public static void combSortTest() {
 		Integer[] arrayToSort = { 13, 4, 2, 6, 5, 7, 18, 1, 9, 24 };
 		Integer[] arrayResult = { 1, 2, 4, 5, 6, 7, 9, 13, 18, 24 };
 		CombSort.sort(arrayToSort);
@@ -48,7 +48,7 @@ public class SortingTests {
 	}
 
 	@Test(description = "Verify Cocktail Sort", groups = "Positive")
-	public static void CocktailSortTest() {
+	public static void cocktailSortTest() {
 		Integer[] arrayToSort = { 13, 4, 2, 6, 5, 7, 18, 1, 9, 24 };
 		Integer[] arrayResult = { 1, 2, 4, 5, 6, 7, 9, 13, 18, 24 };
 		CocktailSort.sort(arrayToSort);
@@ -56,7 +56,7 @@ public class SortingTests {
 	}
 
 	@Test(description = "Verify Counting Sort", groups = "Positive")
-	public static void CountingSortTest() {
+	public static void countingSortTest() {
 		Integer[] arrayToSort = { 13, 4, 2, 6, 5, 7, 18, 1, 9, 24 };
 		Integer[] arrayResult = { 1, 2, 4, 5, 6, 7, 9, 13, 18, 24 };
 		CountingSort.sort(arrayToSort);
@@ -64,7 +64,7 @@ public class SortingTests {
 	}
 
 	@Test(description = "Verify Gnome Sort", groups = "Positive")
-	public static void GnomeSortTest() {
+	public static void gnomeSortTest() {
 		Integer[] arrayToSort = { 13, 4, 2, 6, 5, 7, 18, 1, 9, 24 };
 		Integer[] arrayResult = { 1, 2, 4, 5, 6, 7, 9, 13, 18, 24 };
 		GnomeSort.sort(arrayToSort);
@@ -72,15 +72,15 @@ public class SortingTests {
 	}
 
 	@Test(description = "Verify Heap Sort", groups = "Positive")
-	public static void HeapSortTest() {
+	public static void heapSortTest() {
 		Integer[] arrayToSort = { 13, 4, 2, 6, 5, 7, 18, 1, 9, 24 };
 		Integer[] arrayResult = { 1, 2, 4, 5, 6, 7, 9, 13, 18, 24 };
-		Heapsort.sort(arrayToSort);
+		HeapSort.sort(arrayToSort);
 		assertEquals(arrayToSort, arrayResult);
 	}
 
 	@Test(description = "Verify Insertion Sort", groups = "Positive")
-	public static void InsertionSortTest() {
+	public static void insertionSortTest() {
 		Integer[] arrayToSort = { 13, 4, 2, 6, 5, 7, 18, 1, 9, 24 };
 		Integer[] arrayResult = { 1, 2, 4, 5, 6, 7, 9, 13, 18, 24 };
 		InsertionSort.sort(arrayToSort);
@@ -88,7 +88,7 @@ public class SortingTests {
 	}
 
 	@Test(description = "Verify Merge Sort", groups = "Positive")
-	public static void MergeSortTest() {
+	public static void mergeSortTest() {
 		Integer[] arrayToSort = { 13, 4, 2, 6, 5, 7, 18, 1, 9, 24 };
 		Integer[] arrayExpected = { 1, 2, 4, 5, 6, 7, 9, 13, 18, 24 };
 		Integer[] actualResult = MergeSort.sort(arrayToSort);
@@ -96,7 +96,7 @@ public class SortingTests {
 	}
 
 	@Test(description = "Verify Bottom Up Merge Sort", groups = "Positive")
-	public static void MergeSortBottomUpTest() {
+	public static void mergeSortBottomUpTest() {
 		Integer[] arrayToSort = { 13, 4, 2, 6, 5, 7, 18, 1, 9, 24 };
 		Integer[] arrayResult = { 1, 2, 4, 5, 6, 7, 9, 13, 18, 24 };
 		MergeSortBottomUp.sort(arrayToSort);
@@ -104,7 +104,7 @@ public class SortingTests {
 	}
 
 	@Test(description = "Verify Merge Sort Natural", groups = "Positive")
-	public static void MergeSortNaturalTest() {
+	public static void mergeSortNaturalTest() {
 		Integer[] arrayToSort = { 13, 4, 2, 6, 5, 7, 18, 1, 9, 24 };
 
 		Integer[] arrayExpected = { 24, 18, 13, 9, 7, 6, 5, 4, 2, 1 };
@@ -127,15 +127,15 @@ public class SortingTests {
 	}
 
 	@Test(description = "Verify Quick Sort", groups = "Positive")
-	public static void QuicksortTest() {
+	public static void quicksortTest() {
 		Integer[] arrayToSort = { 13, 4, 2, 6, 5, 7, 18, 1, 9, 24 };
 		Integer[] arrayResult = { 1, 2, 4, 5, 6, 7, 9, 13, 18, 24 };
-		Quicksort.sort(arrayToSort);
+		QuickSort.sort(arrayToSort);
 		assertEquals(arrayToSort, arrayResult);
 	}
 
 	@Test(description = "Verify Radix Sort", groups = "Positive")
-	public static void RadixsortTest() {
+	public static void radixsortTest() {
 		Integer[] arrayToSort = { 13, 4, 2, 6, 5, 7, 18, 1, 9, 24 };
 		Integer[] arrayResult = { 1, 2, 4, 5, 6, 7, 9, 13, 18, 24 };
 		RadixSort.sort(arrayToSort);

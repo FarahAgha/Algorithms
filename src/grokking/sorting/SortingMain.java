@@ -45,7 +45,7 @@ public class SortingMain {
         	HelperFunctions.printArray(array);
         	break;
         case 3:
-        	Quicksort.sort(array);
+        	QuickSort.sort(array);
         	System.out.println("Quick Sort");
         	HelperFunctions.printArray(array);
         	break;
@@ -109,7 +109,7 @@ public class SortingMain {
         	break;
         case 15:
         	System.out.println("Heap Sort");
-        	Heapsort.sort(array);
+        	HeapSort.sort(array);
         	HelperFunctions.printArray(array);
         	break;
         case 16:
